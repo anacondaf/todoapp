@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "0nqlJtjS5xqZS8PVa8vO78Hz+3EVI8cE4Zj+kEWV1v8csqO3d452kDamHFCmEue5i1UdtRxfw9fyPk0GzBjNQw==",
+  "success": true,
+  "projectFilePath": "C:\\Projects\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\khai.nguyenduc\\.nuget\\packages\\newid\\4.0.1\\newid.4.0.1.nupkg.sha512"
+  ],
+  "logs": []
+}
