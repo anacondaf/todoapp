@@ -618,6 +618,18 @@
           }
         }
       },
+      "Roslynator.Analyzers/4.2.0": {
+        "type": "package"
+      },
+      "StyleCop.Analyzers/1.2.0-beta.435": {
+        "type": "package",
+        "dependencies": {
+          "StyleCop.Analyzers.Unstable": "1.2.0.435"
+        }
+      },
+      "StyleCop.Analyzers.Unstable/1.2.0.435": {
+        "type": "package"
+      },
       "Swashbuckle.AspNetCore/6.4.0": {
         "type": "package",
         "dependencies": {
@@ -2306,6 +2318,69 @@
         "newid.nuspec"
       ]
     },
+    "Roslynator.Analyzers/4.2.0": {
+      "sha512": "3N8CNx1Q/Q5VDDL7qgfZRgTURyMqzHAkAB59AZKRnsOXoh2n9xRzhiBMIbJaUtBATmieECBx68GcjRn2xoNDug==",
+      "type": "package",
+      "path": "roslynator.analyzers/4.2.0",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "analyzers/dotnet/cs/Roslynator.CSharp.Analyzers.CodeFixes.dll",
+        "analyzers/dotnet/cs/Roslynator.CSharp.Analyzers.dll",
+        "analyzers/dotnet/cs/Roslynator_Analyzers_Roslynator.CSharp.Workspaces.dll",
+        "analyzers/dotnet/cs/Roslynator_Analyzers_Roslynator.CSharp.dll",
+        "analyzers/dotnet/cs/Roslynator_Analyzers_Roslynator.Common.dll",
+        "analyzers/dotnet/cs/Roslynator_Analyzers_Roslynator.Core.dll",
+        "analyzers/dotnet/cs/Roslynator_Analyzers_Roslynator.Workspaces.Common.dll",
+        "analyzers/dotnet/cs/Roslynator_Analyzers_Roslynator.Workspaces.Core.dll",
+        "docs/README.md",
+        "icon.png",
+        "roslynator.analyzers.4.2.0.nupkg.sha512",
+        "roslynator.analyzers.nuspec",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
+    "StyleCop.Analyzers/1.2.0-beta.435": {
+      "sha512": "TADk7vdGXtfTnYCV7GyleaaRTQjfoSfZXprQrVMm7cSJtJbFc1QIbWPyLvrgrfGdfHbGmUPvaN4ODKNxg2jgPQ==",
+      "type": "package",
+      "path": "stylecop.analyzers/1.2.0-beta.435",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "THIRD-PARTY-NOTICES.txt",
+        "stylecop.analyzers.1.2.0-beta.435.nupkg.sha512",
+        "stylecop.analyzers.nuspec"
+      ]
+    },
+    "StyleCop.Analyzers.Unstable/1.2.0.435": {
+      "sha512": "ouwPWZxbOV3SmCZxIRqHvljkSzkCyi1tDoMzQtDb/bRP8ctASV/iRJr+A2Gdj0QLaLmWnqTWDrH82/iP+X80Lg==",
+      "type": "package",
+      "path": "stylecop.analyzers.unstable/1.2.0.435",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE",
+        "THIRD-PARTY-NOTICES.txt",
+        "analyzers/dotnet/cs/StyleCop.Analyzers.CodeFixes.dll",
+        "analyzers/dotnet/cs/StyleCop.Analyzers.dll",
+        "analyzers/dotnet/cs/de-DE/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/en-GB/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/es-MX/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/fr-FR/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/pl-PL/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/pt-BR/StyleCop.Analyzers.resources.dll",
+        "analyzers/dotnet/cs/ru-RU/StyleCop.Analyzers.resources.dll",
+        "rulesets/StyleCopAnalyzersDefault.ruleset",
+        "stylecop.analyzers.unstable.1.2.0.435.nupkg.sha512",
+        "stylecop.analyzers.unstable.nuspec",
+        "tools/install.ps1",
+        "tools/uninstall.ps1"
+      ]
+    },
     "Swashbuckle.AspNetCore/6.4.0": {
       "sha512": "eUBr4TW0up6oKDA5Xwkul289uqSMgY0xGN4pnbOIBqCcN9VKGGaPvHX3vWaG/hvocfGDP+MGzMA0bBBKz2fkmQ==",
       "type": "package",
@@ -3265,36 +3340,39 @@
     "net8.0": [
       "Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 8.0.4",
+      "Roslynator.Analyzers >= 4.2.0",
+      "StyleCop.Analyzers >= 1.2.0-beta.435",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\khai.nguyenduc\\.nuget\\packages\\": {}
+    "C:\\Users\\kaing\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Projects\\todoapp\\todoapp.backend\\API\\Host\\Host.csproj",
+      "projectUniqueName": "E:\\Projects\\TestProjects\\todoapp\\todoapp.backend\\API\\Host\\Host.csproj",
       "projectName": "Host",
-      "projectPath": "C:\\Projects\\todoapp\\todoapp.backend\\API\\Host\\Host.csproj",
-      "packagesPath": "C:\\Users\\khai.nguyenduc\\.nuget\\packages\\",
-      "outputPath": "C:\\Projects\\todoapp\\todoapp.backend\\API\\Host\\obj\\",
+      "projectPath": "E:\\Projects\\TestProjects\\todoapp\\todoapp.backend\\API\\Host\\Host.csproj",
+      "packagesPath": "C:\\Users\\kaing\\.nuget\\packages\\",
+      "outputPath": "E:\\Projects\\TestProjects\\todoapp\\todoapp.backend\\API\\Host\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\khai.nguyenduc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\kaing\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Projects\\todoapp\\todoapp.backend\\API\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "C:\\Projects\\todoapp\\todoapp.backend\\API\\Infrastructure\\Infrastructure.csproj"
+            "E:\\Projects\\TestProjects\\todoapp\\todoapp.backend\\API\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "E:\\Projects\\TestProjects\\todoapp\\todoapp.backend\\API\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
@@ -3303,11 +3381,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -3317,6 +3390,18 @@
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[8.0.4, )"
+          },
+          "Roslynator.Analyzers": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[4.2.0, )"
+          },
+          "StyleCop.Analyzers": {
+            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+            "suppressParent": "All",
+            "target": "Package",
+            "version": "[1.2.0-beta.435, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",
@@ -3342,7 +3427,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.104/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

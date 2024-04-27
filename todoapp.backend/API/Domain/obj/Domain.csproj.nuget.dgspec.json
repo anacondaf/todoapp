@@ -1,25 +1,26 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Projects\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj": {}
+    "E:\\Projects\\TestProjects\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "C:\\Projects\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj": {
+    "E:\\Projects\\TestProjects\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Projects\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj",
+        "projectUniqueName": "E:\\Projects\\TestProjects\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "C:\\Projects\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\khai.nguyenduc\\.nuget\\packages\\",
-        "outputPath": "C:\\Projects\\todoapp\\todoapp.backend\\API\\Domain\\obj\\",
+        "projectPath": "E:\\Projects\\TestProjects\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\kaing\\.nuget\\packages\\",
+        "outputPath": "E:\\Projects\\TestProjects\\todoapp\\todoapp.backend\\API\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\khai.nguyenduc\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\kaing\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -32,11 +33,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -46,6 +42,18 @@
             "NewId": {
               "target": "Package",
               "version": "[4.0.1, )"
+            },
+            "Roslynator.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, )"
             }
           },
           "imports": [
@@ -67,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.104/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

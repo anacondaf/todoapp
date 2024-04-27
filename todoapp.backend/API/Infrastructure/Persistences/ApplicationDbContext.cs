@@ -1,12 +1,19 @@
 ﻿using System.Reflection;
-using Domain;
 using Domain.Commons.Audits;
+using Domain.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Infrastructure;
+namespace Infrastructure.Persistences;
 
-public class ApplicationDbContext(DbContextOptions options) : DbContext(options)
+public class ApplicationDbContext(DbContextOptions options, Guid tenantId) : DbContext(options)
 {
+    public delegate ApplicationDbContext TenantFactory(Guid tenantId);
+
+    public DbSet<Tag> Tags { get; set; }
+    public DbSet<TagTodoItem> TagTypes { get; set; }
+    public DbSet<TodoItem> TodoItems { get; set; }
+    public DbSet<Workspace> Workspaces { get; set; }
+
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {
         modelBuilder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
@@ -27,9 +34,7 @@ public class ApplicationDbContext(DbContextOptions options) : DbContext(options)
         foreach (var entry in ChangeTracker.Entries())
         {
             if (entry.State is EntityState.Detached || entry.State == EntityState.Unchanged || entry.Entity is not AuditableEntity)
-            {
-
-            }
+                continue;
         }
     }
 }

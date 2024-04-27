@@ -1,4 +1,6 @@
-﻿namespace Domain.Commons.Audits;
+﻿using Domain.Commons.Contracts;
+
+namespace Domain.Commons.Audits;
 
 public abstract class AuditableEntity : BaseEntity
 {

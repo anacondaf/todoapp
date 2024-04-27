@@ -1,6 +1,6 @@
-﻿using Domain.Commons;
+﻿using Domain.Commons.Contracts;
 
-namespace Domain;
+namespace Domain.Models;
 
 public class Tag : BaseEntity
 {

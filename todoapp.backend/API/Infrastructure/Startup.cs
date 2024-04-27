@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using Infrastructure.Persistences;
+using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure;
 

@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Infrastructure;
+namespace Infrastructure.Persistences.Initialization;
 
 internal class ApplicationDbInitializer(ApplicationDbContext dbContext)
 {

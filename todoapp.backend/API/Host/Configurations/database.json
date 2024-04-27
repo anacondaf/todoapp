@@ -1,0 +1,6 @@
+{
+	"DbSettings": {
+		"DbProvider": "sqlserver",
+		"ConnectionString": "Server=localhost;Database=TodoApp;UserId=sa;Password=Password1;IntegratedSecurity=false;TrustServerCertificate=true;"
+	}
+}
