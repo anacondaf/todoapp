@@ -1,7 +1,8 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\todoapp.backend"
   ],
-  "SelectedNode": "\\todoapp.backend.sln",
+  "SelectedNode": "\\todoapp.backend\\todoapp.backend.sln",
   "PreviewInSolutionExplorer": false
 }

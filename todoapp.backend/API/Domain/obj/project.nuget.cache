@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "EsYBkt8yw+eALjdr+nFjm8B209yYGGOhIt93e/lfC3DMEXRPWjkFQuEKUxPtc1uxu+zkGuPnt2DmfuaIX4YqOg==",
+  "dgSpecHash": "hJV7l4GzhwU3G4/hYLoMr5xjyNk+6BW+xfDQ5CuPuZ2mOkS+ljhCkHlHmCtV26Dw3us74hG/hzjWGsHE8h+cOA==",
   "success": true,
-  "projectFilePath": "/home/kainguyen/code/TestProjects/todoapp/todoapp.backend/API/Domain/Domain.csproj",
+  "projectFilePath": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
-    "/home/kainguyen/.nuget/packages/newid/4.0.1/newid.4.0.1.nupkg.sha512",
-    "/home/kainguyen/.nuget/packages/roslynator.analyzers/4.2.0/roslynator.analyzers.4.2.0.nupkg.sha512"
+    "C:\\Users\\kaing\\.nuget\\packages\\newid\\4.0.1\\newid.4.0.1.nupkg.sha512",
+    "C:\\Users\\kaing\\.nuget\\packages\\roslynator.analyzers\\4.2.0\\roslynator.analyzers.4.2.0.nupkg.sha512"
   ],
   "logs": []
 }

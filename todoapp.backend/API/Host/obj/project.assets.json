@@ -2,6 +2,73 @@
   "version": 3,
   "targets": {
     "net8.0": {
+      "Asp.Versioning.Abstractions/8.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Primitives": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Asp.Versioning.Abstractions.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Asp.Versioning.Abstractions.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Asp.Versioning.Http/8.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Asp.Versioning.Abstractions": "8.1.0"
+        },
+        "compile": {
+          "lib/net8.0/Asp.Versioning.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Asp.Versioning.Http.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
+      },
+      "Asp.Versioning.Mvc/8.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Asp.Versioning.Http": "8.1.0"
+        },
+        "compile": {
+          "lib/net8.0/Asp.Versioning.Mvc.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Asp.Versioning.Mvc.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Asp.Versioning.Mvc.ApiExplorer/8.1.0": {
+        "type": "package",
+        "dependencies": {
+          "Asp.Versioning.Mvc": "8.1.0"
+        },
+        "compile": {
+          "lib/net8.0/Asp.Versioning.Mvc.ApiExplorer.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Asp.Versioning.Mvc.ApiExplorer.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Azure.Core/1.35.0": {
         "type": "package",
         "dependencies": {
@@ -1204,6 +1271,74 @@
     }
   },
   "libraries": {
+    "Asp.Versioning.Abstractions/8.1.0": {
+      "sha512": "mpeNZyMdvrHztJwR1sXIUQ+3iioEU97YMBnFA9WLbsPOYhGwDJnqJMmEd8ny7kcmS9OjTHoEuX/bSXXY3brIFA==",
+      "type": "package",
+      "path": "asp.versioning.abstractions/8.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "asp.versioning.abstractions.8.1.0.nupkg.sha512",
+        "asp.versioning.abstractions.nuspec",
+        "icon.png",
+        "lib/net8.0/Asp.Versioning.Abstractions.dll",
+        "lib/net8.0/Asp.Versioning.Abstractions.xml",
+        "lib/netstandard1.0/Asp.Versioning.Abstractions.dll",
+        "lib/netstandard1.0/Asp.Versioning.Abstractions.xml",
+        "lib/netstandard2.0/Asp.Versioning.Abstractions.dll",
+        "lib/netstandard2.0/Asp.Versioning.Abstractions.xml"
+      ]
+    },
+    "Asp.Versioning.Http/8.1.0": {
+      "sha512": "Xu4xF62Cu9JqYi/CTa2TiK5kyHoa4EluPynj/bPFWDmlTIPzuJQbBI5RgFYVRFHjFVvWMoA77acRaFu7i7Wzqg==",
+      "type": "package",
+      "path": "asp.versioning.http/8.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "asp.versioning.http.8.1.0.nupkg.sha512",
+        "asp.versioning.http.nuspec",
+        "icon.png",
+        "lib/net8.0/Asp.Versioning.Http.dll",
+        "lib/net8.0/Asp.Versioning.Http.xml"
+      ]
+    },
+    "Asp.Versioning.Mvc/8.1.0": {
+      "sha512": "BMAJM2sGsTUw5FQ9upKQt6GFoldWksePgGpYjl56WSRvIuE3UxKZh0gAL+wDTIfLshUZm97VCVxlOGyrcjWz9Q==",
+      "type": "package",
+      "path": "asp.versioning.mvc/8.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "asp.versioning.mvc.8.1.0.nupkg.sha512",
+        "asp.versioning.mvc.nuspec",
+        "icon.png",
+        "lib/net8.0/Asp.Versioning.Mvc.dll",
+        "lib/net8.0/Asp.Versioning.Mvc.xml"
+      ]
+    },
+    "Asp.Versioning.Mvc.ApiExplorer/8.1.0": {
+      "sha512": "a90gW/4TF/14Bjiwg9LqNtdKGC4G3gu02+uynq3bCISfQm48km5chny4Yg5J4hixQPJUwwJJ9Do1G+jM8L9h3g==",
+      "type": "package",
+      "path": "asp.versioning.mvc.apiexplorer/8.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "asp.versioning.mvc.apiexplorer.8.1.0.nupkg.sha512",
+        "asp.versioning.mvc.apiexplorer.nuspec",
+        "icon.png",
+        "lib/net8.0/Asp.Versioning.Mvc.ApiExplorer.dll",
+        "lib/net8.0/Asp.Versioning.Mvc.ApiExplorer.xml"
+      ]
+    },
     "Azure.Core/1.35.0": {
       "sha512": "hENcx03Jyuqv05F4RBEPbxz29UrM3Nbhnr6Wl6NQpoU9BCIbL3XLentrxDCTrH54NLS11Exxi/o8MYgT/cnKFA==",
       "type": "package",
@@ -3409,6 +3544,8 @@
   "projectFileDependencyGroups": {
     "net8.0": [
       "Application >= 1.0.0",
+      "Asp.Versioning.Http >= 8.1.0",
+      "Asp.Versioning.Mvc.ApiExplorer >= 8.1.0",
       "Infrastructure >= 1.0.0",
       "Microsoft.AspNetCore.OpenApi >= 8.0.4",
       "Roslynator.Analyzers >= 4.2.0",
@@ -3416,35 +3553,37 @@
     ]
   },
   "packageFolders": {
-    "/home/kainguyen/.nuget/packages/": {}
+    "C:\\Users\\kaing\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/home/kainguyen/code/TestProjects/todoapp/todoapp.backend/API/Host/Host.csproj",
+      "projectUniqueName": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Host\\Host.csproj",
       "projectName": "Host",
-      "projectPath": "/home/kainguyen/code/TestProjects/todoapp/todoapp.backend/API/Host/Host.csproj",
-      "packagesPath": "/home/kainguyen/.nuget/packages/",
-      "outputPath": "/home/kainguyen/code/TestProjects/todoapp/todoapp.backend/API/Host/obj/",
+      "projectPath": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Host\\Host.csproj",
+      "packagesPath": "C:\\Users\\kaing\\.nuget\\packages\\",
+      "outputPath": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Host\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/home/kainguyen/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\kaing\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/home/kainguyen/code/TestProjects/todoapp/todoapp.backend/API/Application/Application.csproj": {
-              "projectPath": "/home/kainguyen/code/TestProjects/todoapp/todoapp.backend/API/Application/Application.csproj"
+            "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Application\\Application.csproj": {
+              "projectPath": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Application\\Application.csproj"
             },
-            "/home/kainguyen/code/TestProjects/todoapp/todoapp.backend/API/Infrastructure/Infrastructure.csproj": {
-              "projectPath": "/home/kainguyen/code/TestProjects/todoapp/todoapp.backend/API/Infrastructure/Infrastructure.csproj"
+            "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
@@ -3453,12 +3592,25 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
+          "Asp.Versioning.Http": {
+            "target": "Package",
+            "version": "[8.1.0, )"
+          },
+          "Asp.Versioning.Mvc.ApiExplorer": {
+            "target": "Package",
+            "version": "[8.1.0, )"
+          },
           "Microsoft.AspNetCore.OpenApi": {
             "target": "Package",
             "version": "[8.0.4, )"
@@ -3493,7 +3645,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.102/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

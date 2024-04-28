@@ -1,6 +1,6 @@
-﻿namespace Domain.Models;
+﻿using Domain.Commons.Contracts;
 
-using Domain.Commons.Contracts;
+namespace Domain.Models;
 
 public sealed class Tag : AuditableEntity
 {

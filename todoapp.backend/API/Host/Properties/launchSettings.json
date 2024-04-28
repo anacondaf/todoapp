@@ -9,12 +9,12 @@
 		}
 	},
 	"profiles": {
-		"https": {
+		"http": {
 			"commandName": "Project",
 			"dotnetRunMessages": true,
 			"launchBrowser": true,
 			"launchUrl": "swagger",
-			"applicationUrl": "https://localhost:3000",
+			"applicationUrl": "http://localhost:3000",
 			"environmentVariables": {
 				"ASPNETCORE_ENVIRONMENT": "Development",
 				"AUTHOR_NAME": "KaiNguyen"
