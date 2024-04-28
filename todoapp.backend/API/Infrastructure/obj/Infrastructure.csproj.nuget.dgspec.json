@@ -1,26 +1,113 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projects\\TestProjects\\todoapp\\todoapp.backend\\API\\Infrastructure\\Infrastructure.csproj": {}
+    "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Infrastructure\\Infrastructure.csproj": {}
   },
   "projects": {
-    "E:\\Projects\\TestProjects\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj": {
+    "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Application\\Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\TestProjects\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj",
-        "projectName": "Domain",
-        "projectPath": "E:\\Projects\\TestProjects\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Application\\Application.csproj",
+        "projectName": "Application",
+        "projectPath": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Application\\Application.csproj",
         "packagesPath": "C:\\Users\\kaing\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\TestProjects\\todoapp\\todoapp.backend\\API\\Domain\\obj\\",
+        "outputPath": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Application\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kaing\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\kaing\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj": {
+                "projectPath": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "FluentValidation": {
+              "target": "Package",
+              "version": "[11.9.1, )"
+            },
+            "MediatR": {
+              "target": "Package",
+              "version": "[12.2.0, )"
+            },
+            "Roslynator.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[4.2.0, )"
+            },
+            "StyleCop.Analyzers": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[1.2.0-beta.435, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj",
+        "projectName": "Domain",
+        "projectPath": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\kaing\\.nuget\\packages\\",
+        "outputPath": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\kaing\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -33,6 +120,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -75,35 +167,36 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.104/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\Projects\\TestProjects\\todoapp\\todoapp.backend\\API\\Infrastructure\\Infrastructure.csproj": {
+    "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Infrastructure\\Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\TestProjects\\todoapp\\todoapp.backend\\API\\Infrastructure\\Infrastructure.csproj",
+        "projectUniqueName": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Infrastructure\\Infrastructure.csproj",
         "projectName": "Infrastructure",
-        "projectPath": "E:\\Projects\\TestProjects\\todoapp\\todoapp.backend\\API\\Infrastructure\\Infrastructure.csproj",
+        "projectPath": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Infrastructure\\Infrastructure.csproj",
         "packagesPath": "C:\\Users\\kaing\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\TestProjects\\todoapp\\todoapp.backend\\API\\Infrastructure\\obj\\",
+        "outputPath": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kaing\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\kaing\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\Projects\\TestProjects\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj": {
-                "projectPath": "E:\\Projects\\TestProjects\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj"
+              "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Application\\Application.csproj": {
+                "projectPath": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Application\\Application.csproj"
               }
             }
           }
@@ -112,6 +205,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -164,7 +262,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.104/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

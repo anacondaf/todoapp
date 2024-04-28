@@ -1,26 +1,27 @@
 {
   "format": 1,
   "restore": {
-    "E:\\Projects\\TestProjects\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj": {}
+    "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "E:\\Projects\\TestProjects\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj": {
+    "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\Projects\\TestProjects\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj",
+        "projectUniqueName": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "E:\\Projects\\TestProjects\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj",
+        "projectPath": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj",
         "packagesPath": "C:\\Users\\kaing\\.nuget\\packages\\",
-        "outputPath": "E:\\Projects\\TestProjects\\todoapp\\todoapp.backend\\API\\Domain\\obj\\",
+        "outputPath": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kaing\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\kaing\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files\\dotnet\\library-packs": {},
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -33,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -75,7 +81,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.104/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

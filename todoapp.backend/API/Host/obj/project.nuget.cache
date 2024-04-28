@@ -1,11 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "skTX58o8rn+G0S5HEObxLDOMkUU0mg5cAs/LtkI0pCKBRWyqJbhsJDVUgiCgI0vIX3rZPWSTWjnWYKKzjgKZJg==",
+  "dgSpecHash": "mkNe1JAW75NUmd0NXKIPIH75e4Wa7R9cFYznNHpkXGSnmHzpYKGvq3cpGbfvguSoQfFpjX30S/CEP5OLmhkP+w==",
   "success": true,
-  "projectFilePath": "E:\\Projects\\TestProjects\\todoapp\\todoapp.backend\\API\\Host\\Host.csproj",
+  "projectFilePath": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Host\\Host.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\kaing\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\kaing\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
+    "C:\\Users\\kaing\\.nuget\\packages\\fluentvalidation\\11.9.1\\fluentvalidation.11.9.1.nupkg.sha512",
+    "C:\\Users\\kaing\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\kaing\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
     "C:\\Users\\kaing\\.nuget\\packages\\microsoft.aspnetcore.openapi\\8.0.4\\microsoft.aspnetcore.openapi.8.0.4.nupkg.sha512",
     "C:\\Users\\kaing\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\kaing\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

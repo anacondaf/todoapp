@@ -2,7 +2,7 @@
 
 namespace Domain.Models;
 
-public class Workspace : BaseEntity
+public class Workspace : AuditableEntity
 {
     public string Email { get; set; }
     public string WebDomain { get; set; }

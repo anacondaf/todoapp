@@ -1,11 +1,11 @@
-﻿using System.Reflection;
+﻿namespace Infrastructure.Persistences;
+
 using Domain.Commons.Audits;
 using Domain.Models;
 using Microsoft.EntityFrameworkCore;
+using System.Reflection;
 
-namespace Infrastructure.Persistences;
-
-public class ApplicationDbContext(DbContextOptions options, Guid tenantId) : DbContext(options)
+public class ApplicationDbContext(DbContextOptions options, Guid tenantId) : DbContext(options), IApplicationDbContext
 {
     public delegate ApplicationDbContext TenantFactory(Guid tenantId);
 
