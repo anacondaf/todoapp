@@ -1,7 +1,6 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
-using MassTransit;
+﻿namespace Domain.Commons.Contracts;
 
-namespace Domain.Commons.Contracts;
+using MassTransit;
 
 public abstract class BaseEntity : BaseEntity<DefaultIdType>
 {
@@ -11,7 +10,4 @@ public abstract class BaseEntity : BaseEntity<DefaultIdType>
 public abstract class BaseEntity<TId> : IEntity<TId>
 {
     public TId Id { get; protected set; } = default!;
-
-    [NotMapped]
-    public List<DomainEvent> DomainEvents { get; } = new();
 }

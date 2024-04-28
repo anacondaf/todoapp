@@ -937,15 +937,6 @@
       "Roslynator.Analyzers/4.2.0": {
         "type": "package"
       },
-      "StyleCop.Analyzers/1.2.0-beta.435": {
-        "type": "package",
-        "dependencies": {
-          "StyleCop.Analyzers.Unstable": "1.2.0.435"
-        }
-      },
-      "StyleCop.Analyzers.Unstable/1.2.0.435": {
-        "type": "package"
-      },
       "System.CodeDom/4.4.0": {
         "type": "package",
         "compile": {
@@ -3079,45 +3070,6 @@
         "tools/uninstall.ps1"
       ]
     },
-    "StyleCop.Analyzers/1.2.0-beta.435": {
-      "sha512": "TADk7vdGXtfTnYCV7GyleaaRTQjfoSfZXprQrVMm7cSJtJbFc1QIbWPyLvrgrfGdfHbGmUPvaN4ODKNxg2jgPQ==",
-      "type": "package",
-      "path": "stylecop.analyzers/1.2.0-beta.435",
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE",
-        "THIRD-PARTY-NOTICES.txt",
-        "stylecop.analyzers.1.2.0-beta.435.nupkg.sha512",
-        "stylecop.analyzers.nuspec"
-      ]
-    },
-    "StyleCop.Analyzers.Unstable/1.2.0.435": {
-      "sha512": "ouwPWZxbOV3SmCZxIRqHvljkSzkCyi1tDoMzQtDb/bRP8ctASV/iRJr+A2Gdj0QLaLmWnqTWDrH82/iP+X80Lg==",
-      "type": "package",
-      "path": "stylecop.analyzers.unstable/1.2.0.435",
-      "hasTools": true,
-      "files": [
-        ".nupkg.metadata",
-        ".signature.p7s",
-        "LICENSE",
-        "THIRD-PARTY-NOTICES.txt",
-        "analyzers/dotnet/cs/StyleCop.Analyzers.CodeFixes.dll",
-        "analyzers/dotnet/cs/StyleCop.Analyzers.dll",
-        "analyzers/dotnet/cs/de-DE/StyleCop.Analyzers.resources.dll",
-        "analyzers/dotnet/cs/en-GB/StyleCop.Analyzers.resources.dll",
-        "analyzers/dotnet/cs/es-MX/StyleCop.Analyzers.resources.dll",
-        "analyzers/dotnet/cs/fr-FR/StyleCop.Analyzers.resources.dll",
-        "analyzers/dotnet/cs/pl-PL/StyleCop.Analyzers.resources.dll",
-        "analyzers/dotnet/cs/pt-BR/StyleCop.Analyzers.resources.dll",
-        "analyzers/dotnet/cs/ru-RU/StyleCop.Analyzers.resources.dll",
-        "rulesets/StyleCopAnalyzersDefault.ruleset",
-        "stylecop.analyzers.unstable.1.2.0.435.nupkg.sha512",
-        "stylecop.analyzers.unstable.nuspec",
-        "tools/install.ps1",
-        "tools/uninstall.ps1"
-      ]
-    },
     "System.CodeDom/4.4.0": {
       "sha512": "2sCCb7doXEwtYAbqzbF/8UAeDRMNmPaQbU2q50Psg1J9KzumyVVCgKQY8s53WIPTufNT0DpSe9QRvVjOzfDWBA==",
       "type": "package",
@@ -4308,39 +4260,36 @@
       "Microsoft.EntityFrameworkCore >= 8.0.4",
       "Microsoft.EntityFrameworkCore.Design >= 8.0.4",
       "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.4",
-      "Roslynator.Analyzers >= 4.2.0",
-      "StyleCop.Analyzers >= 1.2.0-beta.435"
+      "Roslynator.Analyzers >= 4.2.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kaing\\.nuget\\packages\\": {}
+    "/home/kainguyen/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Infrastructure\\Infrastructure.csproj",
+      "projectUniqueName": "/home/kainguyen/code/TestProjects/todoapp/todoapp.backend/API/Infrastructure/Infrastructure.csproj",
       "projectName": "Infrastructure",
-      "projectPath": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Infrastructure\\Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\kaing\\.nuget\\packages\\",
-      "outputPath": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Infrastructure\\obj\\",
+      "projectPath": "/home/kainguyen/code/TestProjects/todoapp/todoapp.backend/API/Infrastructure/Infrastructure.csproj",
+      "packagesPath": "/home/kainguyen/.nuget/packages/",
+      "outputPath": "/home/kainguyen/code/TestProjects/todoapp/todoapp.backend/API/Infrastructure/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\kaing\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/kainguyen/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Application\\Application.csproj": {
-              "projectPath": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Application\\Application.csproj"
+            "/home/kainguyen/code/TestProjects/todoapp/todoapp.backend/API/Application/Application.csproj": {
+              "projectPath": "/home/kainguyen/code/TestProjects/todoapp/todoapp.backend/API/Application/Application.csproj"
             }
           }
         }
@@ -4349,11 +4298,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -4379,12 +4323,6 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[4.2.0, )"
-          },
-          "StyleCop.Analyzers": {
-            "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
-            "suppressParent": "All",
-            "target": "Package",
-            "version": "[1.2.0-beta.435, )"
           }
         },
         "imports": [
@@ -4406,7 +4344,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.204/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib64/dotnet/sdk/8.0.102/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

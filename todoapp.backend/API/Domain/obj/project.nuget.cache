@@ -1,13 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "Gy1FonhZ3gsjcxymSoKHxA8iS4K5pOfsarWQmSehtStHeMYKfPhu8hzWEvv1i93Tjle7xDfnhU4MDUKUry/5ww==",
+  "dgSpecHash": "EsYBkt8yw+eALjdr+nFjm8B209yYGGOhIt93e/lfC3DMEXRPWjkFQuEKUxPtc1uxu+zkGuPnt2DmfuaIX4YqOg==",
   "success": true,
-  "projectFilePath": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj",
+  "projectFilePath": "/home/kainguyen/code/TestProjects/todoapp/todoapp.backend/API/Domain/Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\kaing\\.nuget\\packages\\newid\\4.0.1\\newid.4.0.1.nupkg.sha512",
-    "C:\\Users\\kaing\\.nuget\\packages\\roslynator.analyzers\\4.2.0\\roslynator.analyzers.4.2.0.nupkg.sha512",
-    "C:\\Users\\kaing\\.nuget\\packages\\stylecop.analyzers\\1.2.0-beta.435\\stylecop.analyzers.1.2.0-beta.435.nupkg.sha512",
-    "C:\\Users\\kaing\\.nuget\\packages\\stylecop.analyzers.unstable\\1.2.0.435\\stylecop.analyzers.unstable.1.2.0.435.nupkg.sha512"
+    "/home/kainguyen/.nuget/packages/newid/4.0.1/newid.4.0.1.nupkg.sha512",
+    "/home/kainguyen/.nuget/packages/roslynator.analyzers/4.2.0/roslynator.analyzers.4.2.0.nupkg.sha512"
   ],
   "logs": []
 }

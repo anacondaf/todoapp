@@ -1,13 +1,12 @@
-﻿using Domain.Commons.Audits;
+﻿namespace Domain.Models;
+
 using Domain.Commons.Contracts;
 
-namespace Domain.Models;
-
-public class TagTodoItem : AuditableEntity
+public sealed class TagTodoItem : AuditableEntity
 {
     public Guid TagId { get; set; }
     public Guid TodoItemId { get; set; }
 
-    public virtual TodoItem TodoItem { get; set; }
-    public virtual Tag Tag { get; set; }
+    public TodoItem TodoItem { get; set; }
+    public Tag Tag { get; set; }
 }

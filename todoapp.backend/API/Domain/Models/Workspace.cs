@@ -1,10 +1,12 @@
-﻿using Domain.Commons.Contracts;
+﻿namespace Domain.Models;
 
-namespace Domain.Models;
+using Domain.Commons.Contracts;
 
-public class Workspace : AuditableEntity
+public sealed class Workspace : AuditableEntity
 {
     public string Email { get; set; }
+
     public string WebDomain { get; set; }
+
     public Guid TenantId { get; set; }
 }

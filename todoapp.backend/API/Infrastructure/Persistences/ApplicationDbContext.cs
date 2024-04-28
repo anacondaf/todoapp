@@ -1,6 +1,7 @@
-﻿namespace Infrastructure.Persistences;
+﻿using Domain.Commons.Contracts;
 
-using Domain.Commons.Audits;
+namespace Infrastructure.Persistences;
+
 using Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;

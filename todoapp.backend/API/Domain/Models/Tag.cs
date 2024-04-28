@@ -1,8 +1,8 @@
 ﻿namespace Domain.Models;
 
-using Domain.Commons.Audits;
+using Domain.Commons.Contracts;
 
-public class Tag : AuditableEntity
+public sealed class Tag : AuditableEntity
 {
     public string Name { get; set; }
 
@@ -10,5 +10,5 @@ public class Tag : AuditableEntity
 
     public Guid TodoItemId { get; set; }
 
-    public virtual ICollection<TagTodoItem> TagItems { get; set; }
+    public ICollection<TagTodoItem> TagItems { get; set; }
 }
