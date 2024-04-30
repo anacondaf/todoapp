@@ -4,6 +4,6 @@ namespace Host.Controllers;
 
 [ApiController]
 [Route("api/v{version:apiVersion}/[controller]")]
-public class BaseApi : ControllerBase
+public class VersionedApiController : ControllerBase
 {
 }

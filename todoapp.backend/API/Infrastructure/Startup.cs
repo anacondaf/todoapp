@@ -1,22 +1,42 @@
-﻿using Infrastructure.Persistences;
-using Microsoft.EntityFrameworkCore;
+﻿using Asp.Versioning;
+using Infrastructure.Commons;
+using Infrastructure.Persistences;
 
 namespace Infrastructure;
 
 public static class Startup
 {
-    public static IServiceCollection AddPersistence(this IServiceCollection service, IConfiguration configuration)
+    public static IServiceCollection AddInfrastructure(this IServiceCollection services, IConfiguration configuration)
     {
-        var appDbConnectionString = configuration.GetConnectionString("AppDb");
+        services
+            .AddServices()
+            .AddPersistence(configuration)
+            .AddApiVersioning();
 
-        service.AddDbContext<ApplicationDbContext>(
-            opts =>
+        return services;
+    }
+
+    private static IServiceCollection AddApiVersioning(this IServiceCollection services)
+    {
+        services
+            .AddApiVersioning(options =>
+             {
+                 options.DefaultApiVersion = new ApiVersion(1, 0);
+                 options.AssumeDefaultVersionWhenUnspecified = true;
+                 options.ReportApiVersions = true;
+             })
+            .AddApiExplorer(options =>
             {
-                opts.UseSqlServer("appDbConnectionString");
-                opts.UseQueryTrackingBehavior(QueryTrackingBehavior.TrackAll);
-            }
-        );
+                options.GroupNameFormat = "'v'VVV";
+                options.SubstituteApiVersionInUrl = true;
+            });
 
-        return service;
+        return services;
+    }
+
+    public static IEndpointRouteBuilder MapEndpoints(this IEndpointRouteBuilder builder)
+    {
+        builder.MapControllers();
+        return builder;
     }
 }

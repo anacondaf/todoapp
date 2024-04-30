@@ -1,9 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "hJV7l4GzhwU3G4/hYLoMr5xjyNk+6BW+xfDQ5CuPuZ2mOkS+ljhCkHlHmCtV26Dw3us74hG/hzjWGsHE8h+cOA==",
+  "dgSpecHash": "6+jCIpb1kJelXgP/dPQ0eKL3qOO03B1WwicBamZ9JKQxuNtHDiiBGq3UD6sbsJ+QRf1BjwbRp6w7v/YzrJ0KMQ==",
   "success": true,
   "projectFilePath": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\kaing\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\kaing\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\kaing\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\kaing\\.nuget\\packages\\newid\\4.0.1\\newid.4.0.1.nupkg.sha512",
     "C:\\Users\\kaing\\.nuget\\packages\\roslynator.analyzers\\4.2.0\\roslynator.analyzers.4.2.0.nupkg.sha512"
   ],

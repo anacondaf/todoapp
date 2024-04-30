@@ -1,14 +1,13 @@
-﻿using Domain.Commons.Contracts;
+﻿namespace Infrastructure.Persistences;
 
-namespace Infrastructure.Persistences;
-
+using Domain.Commons.Contracts;
 using Domain.Models;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
-public class ApplicationDbContext(DbContextOptions options, Guid tenantId) : DbContext(options), IApplicationDbContext
+public class ApplicationDbContext(DbContextOptions options) : DbContext(options), IApplicationDbContext
 {
-    public delegate ApplicationDbContext TenantFactory(Guid tenantId);
+    //public delegate ApplicationDbContext TenantFactory(Guid tenantId);
 
     public DbSet<Tag> Tags { get; set; }
     public DbSet<TagTodoItem> TagTypes { get; set; }

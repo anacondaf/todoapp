@@ -2,6 +2,16 @@
 
 namespace Infrastructure.Persistences.Initialization;
 
+public static class PersistenceExtensions
+{
+    public static async Task InitializeDatabasesAsync(this IServiceProvider services, CancellationToken cancellationToken)
+    {
+        using var scope = services.CreateScope();
+
+        await scope.ServiceProvider.GetRequiredService<ApplicationDbInitializer>().InitializeAsync(cancellationToken);
+    }
+}
+
 internal class ApplicationDbInitializer(ApplicationDbContext dbContext)
 {
     public async Task InitializeAsync(CancellationToken cancellationToken)
@@ -14,15 +24,10 @@ internal class ApplicationDbInitializer(ApplicationDbContext dbContext)
                 await dbContext.Database.MigrateAsync(cancellationToken);
             }
         }
-    }
-}
 
-public static class PersistenceExtensions
-{
-    public static async Task InitializeDatabasesAsync(this IServiceProvider services, CancellationToken cancellationToken)
-    {
-        using var scope = services.CreateScope();
+        if (await dbContext.Database.CanConnectAsync(cancellationToken))
+        {
 
-        await scope.ServiceProvider.GetRequiredService<ApplicationDbInitializer>().InitializeAsync(cancellationToken);
+        }
     }
 }

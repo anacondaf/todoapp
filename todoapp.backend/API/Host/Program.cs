@@ -1,6 +1,6 @@
 using Application;
-using Asp.Versioning;
 using Host.Configurations;
+using Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,22 +9,12 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddControllers();
 
-builder.Services
-    .AddApiVersioning(options =>
-    {
-        options.DefaultApiVersion = new ApiVersion(1, 0);
-        options.AssumeDefaultVersionWhenUnspecified = true;
-        options.ReportApiVersions = true;
-    })
-    .AddApiExplorer(options =>
-    {
-        options.GroupNameFormat = "'v'VVV";
-        options.SubstituteApiVersionInUrl = true;
-    });
-
 builder.Configuration.AddConfigurations();
 
-builder.Services.AddApplication();
+builder
+    .Services
+    .AddApplication()
+    .AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();
 
@@ -34,7 +24,7 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
-app.MapControllers();
+app.MapEndpoints();
 
 app.UseHttpsRedirection();
 

@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Host.Controllers;
 
-public class TagsController(ISender mediator) : BaseApi
+public class TagsController(ISender mediator) : VersionedApiController
 {
     [HttpGet]
     public async Task<IActionResult> GetTagsAsync()

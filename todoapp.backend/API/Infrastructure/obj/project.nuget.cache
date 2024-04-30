@@ -1,9 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "f02WcyYQWWdTE92B7RrgroQKbU7c6IzFymxMrJjpNH5dYPpJH6DzFRrxTVaVO/x6ghNQNUmPJPs0r1O8mqgQzQ==",
+  "dgSpecHash": "kbEoTAqnJH6MRWLho9quaWW4PyE9imtcHLpNYUZG82muBRTchM4YgZWo/73NOHdCMNZ8BZfWB12Rj9aMFhcUzQ==",
   "success": true,
   "projectFilePath": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\kaing\\.nuget\\packages\\asp.versioning.abstractions\\8.1.0\\asp.versioning.abstractions.8.1.0.nupkg.sha512",
+    "C:\\Users\\kaing\\.nuget\\packages\\asp.versioning.http\\8.1.0\\asp.versioning.http.8.1.0.nupkg.sha512",
+    "C:\\Users\\kaing\\.nuget\\packages\\asp.versioning.mvc\\8.1.0\\asp.versioning.mvc.8.1.0.nupkg.sha512",
+    "C:\\Users\\kaing\\.nuget\\packages\\asp.versioning.mvc.apiexplorer\\8.1.0\\asp.versioning.mvc.apiexplorer.8.1.0.nupkg.sha512",
     "C:\\Users\\kaing\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\kaing\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",
     "C:\\Users\\kaing\\.nuget\\packages\\fluentvalidation\\11.9.1\\fluentvalidation.11.9.1.nupkg.sha512",
