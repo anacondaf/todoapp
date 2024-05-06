@@ -1,0 +1,14 @@
+.user {
+  margin-left: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.user img {
+  border-radius: 50%;
+  background-color: aqua;
+  width: 34px;
+  height: 34px;
+}

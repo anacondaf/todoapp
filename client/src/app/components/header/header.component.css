@@ -1,0 +1,35 @@
+.wrapper {
+  flex-basis: 70%;
+  justify-content: space-between;
+  display: flex;
+}
+
+.search-box {
+  background-color: #e5e9f0;
+  padding: 6px 16px;
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  gap: 8px;
+  width: 250px;
+}
+
+.search-box .icon {
+  color: #7f8089;
+}
+
+.search-box input {
+  background-color: #e5e9f0;
+  border: none;
+  outline: none;
+}
+
+.settings {
+  color: #707073;
+  display: flex;
+  align-items: center;
+}
+
+.settings .icon {
+  margin: 0 8px;
+}

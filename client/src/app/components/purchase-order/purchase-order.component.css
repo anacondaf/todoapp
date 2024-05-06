@@ -1,0 +1,45 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-top: 40px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.panel-menu-name {
+  display: flex;
+  align-items: center;
+  color: #6d7c9d;
+}
+
+.panel-menu-name ng-icon {
+  margin-right: 6px;
+}
+
+.panel-menu-name p {
+  font-weight: 500;
+}
+
+.header button {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: #5b83d7;
+  outline: none;
+  border: none;
+  width: 90px;
+  padding: 5px 8px;
+  height: 40px;
+  border-radius: 8px;
+  margin-right: 32px;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px #888888;
+}
+
+.header button ng-icon {
+}

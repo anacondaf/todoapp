@@ -1,14 +1,14 @@
 {
   "version": 2,
-  "dgSpecHash": "6+jCIpb1kJelXgP/dPQ0eKL3qOO03B1WwicBamZ9JKQxuNtHDiiBGq3UD6sbsJ+QRf1BjwbRp6w7v/YzrJ0KMQ==",
+  "dgSpecHash": "1DoP8WRSC1WXGeAe9Z+IVt3dmEhigXKKUo14Yv09FivzbSjqv97mSCZFjWUq6xDkk66IbYaRxHcgBiPvbJajMQ==",
   "success": true,
-  "projectFilePath": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj",
+  "projectFilePath": "C:\\Projects\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\kaing\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
-    "C:\\Users\\kaing\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
-    "C:\\Users\\kaing\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
-    "C:\\Users\\kaing\\.nuget\\packages\\newid\\4.0.1\\newid.4.0.1.nupkg.sha512",
-    "C:\\Users\\kaing\\.nuget\\packages\\roslynator.analyzers\\4.2.0\\roslynator.analyzers.4.2.0.nupkg.sha512"
+    "C:\\Users\\khai.nguyenduc\\.nuget\\packages\\mediatr\\12.2.0\\mediatr.12.2.0.nupkg.sha512",
+    "C:\\Users\\khai.nguyenduc\\.nuget\\packages\\mediatr.contracts\\2.0.1\\mediatr.contracts.2.0.1.nupkg.sha512",
+    "C:\\Users\\khai.nguyenduc\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\khai.nguyenduc\\.nuget\\packages\\newid\\4.0.1\\newid.4.0.1.nupkg.sha512",
+    "C:\\Users\\khai.nguyenduc\\.nuget\\packages\\roslynator.analyzers\\4.2.0\\roslynator.analyzers.4.2.0.nupkg.sha512"
   ],
   "logs": []
 }

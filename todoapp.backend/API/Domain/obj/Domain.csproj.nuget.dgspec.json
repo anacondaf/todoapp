@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj": {}
+    "C:\\Projects\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj": {}
   },
   "projects": {
-    "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj": {
+    "C:\\Projects\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj",
+        "projectUniqueName": "C:\\Projects\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj",
         "projectName": "Domain",
-        "projectPath": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj",
-        "packagesPath": "C:\\Users\\kaing\\.nuget\\packages\\",
-        "outputPath": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Domain\\obj\\",
+        "projectPath": "C:\\Projects\\todoapp\\todoapp.backend\\API\\Domain\\Domain.csproj",
+        "packagesPath": "C:\\Users\\khai.nguyenduc\\.nuget\\packages\\",
+        "outputPath": "C:\\Projects\\todoapp\\todoapp.backend\\API\\Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\kaing\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\khai.nguyenduc\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -72,9 +72,6 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

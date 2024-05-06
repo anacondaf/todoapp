@@ -1246,10 +1246,7 @@
         },
         "runtime": {
           "bin/placeholder/Domain.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       },
       "Infrastructure/1.0.0": {
         "type": "project",
@@ -1266,10 +1263,7 @@
         },
         "runtime": {
           "bin/placeholder/Infrastructure.dll": {}
-        },
-        "frameworkReferences": [
-          "Microsoft.AspNetCore.App"
-        ]
+        }
       }
     }
   },
@@ -3556,19 +3550,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\kaing\\.nuget\\packages\\": {}
+    "C:\\Users\\khai.nguyenduc\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Host\\Host.csproj",
+      "projectUniqueName": "C:\\Projects\\todoapp\\todoapp.backend\\API\\Host\\Host.csproj",
       "projectName": "Host",
-      "projectPath": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Host\\Host.csproj",
-      "packagesPath": "C:\\Users\\kaing\\.nuget\\packages\\",
-      "outputPath": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Host\\obj\\",
+      "projectPath": "C:\\Projects\\todoapp\\todoapp.backend\\API\\Host\\Host.csproj",
+      "packagesPath": "C:\\Users\\khai.nguyenduc\\.nuget\\packages\\",
+      "outputPath": "C:\\Projects\\todoapp\\todoapp.backend\\API\\Host\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\kaing\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\khai.nguyenduc\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3582,11 +3576,11 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Application\\Application.csproj": {
-              "projectPath": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Application\\Application.csproj"
+            "C:\\Projects\\todoapp\\todoapp.backend\\API\\Application\\Application.csproj": {
+              "projectPath": "C:\\Projects\\todoapp\\todoapp.backend\\API\\Application\\Application.csproj"
             },
-            "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Infrastructure\\Infrastructure.csproj": {
-              "projectPath": "D:\\Repos\\anacondaf\\todoapp\\todoapp.backend\\API\\Infrastructure\\Infrastructure.csproj"
+            "C:\\Projects\\todoapp\\todoapp.backend\\API\\Infrastructure\\Infrastructure.csproj": {
+              "projectPath": "C:\\Projects\\todoapp\\todoapp.backend\\API\\Infrastructure\\Infrastructure.csproj"
             }
           }
         }
@@ -3641,9 +3635,6 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.AspNetCore.App": {
-            "privateAssets": "none"
-          },
           "Microsoft.NETCore.App": {
             "privateAssets": "all"
           }
