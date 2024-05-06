@@ -1,0 +1,15 @@
+<div class="wrapper">
+    <div class="wrapper__close">
+        <ng-icon name="ionClose"></ng-icon>
+    </div>
+
+    <dialog-header mat-dialog-title />
+
+    <mat-dialog-content class="mat-typography">
+    </mat-dialog-content>
+
+    <mat-dialog-actions align="end">
+        <button mat-button mat-dialog-close>Cancel</button>
+        <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
+    </mat-dialog-actions>
+</div>

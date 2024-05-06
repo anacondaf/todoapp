@@ -1,0 +1,24 @@
+.mat-mdc-dialog-container {
+  position: relative !important;
+}
+
+.mdc-dialog__title::before {
+  height: 20px;
+}
+
+.wrapper {
+  position: relative;
+
+  &__close {
+    position: absolute;
+    right: 0;
+    margin: 8px 16px 0 0;
+    cursor: pointer;
+    z-index: 1;
+
+    ng-icon {
+      font-size: 18px;
+      cursor: pointer;
+    }
+  }
+}

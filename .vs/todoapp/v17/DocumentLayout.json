@@ -1,7 +1,24 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "D:\\Repos\\anacondaf\\todoapp\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Repos\\anacondaf\\todoapp\\client\\src\\app\\components\\purchase-order\\purchase-order.component.scss||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client\\src\\app\\components\\purchase-order\\purchase-order.component.scss||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Repos\\anacondaf\\todoapp\\client\\src\\app\\components\\purchase-order\\purchase-order.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client\\src\\app\\components\\purchase-order\\purchase-order.component.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Repos\\anacondaf\\todoapp\\client\\src\\app\\components\\purchase-order\\table\\table.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client\\src\\app\\components\\purchase-order\\table\\table.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Repos\\anacondaf\\todoapp\\client\\src\\app\\components\\purchase-order\\table\\table.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:client\\src\\app\\components\\purchase-order\\table\\table.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +26,69 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "purchase-order.component.scss",
+              "DocumentMoniker": "D:\\Repos\\anacondaf\\todoapp\\client\\src\\app\\components\\purchase-order\\purchase-order.component.scss",
+              "RelativeDocumentMoniker": "client\\src\\app\\components\\purchase-order\\purchase-order.component.scss",
+              "ToolTip": "D:\\Repos\\anacondaf\\todoapp\\client\\src\\app\\components\\purchase-order\\purchase-order.component.scss",
+              "RelativeToolTip": "client\\src\\app\\components\\purchase-order\\purchase-order.component.scss",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002663|",
+              "WhenOpened": "2024-05-06T05:25:29.496Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "table.html",
+              "DocumentMoniker": "D:\\Repos\\anacondaf\\todoapp\\client\\src\\app\\components\\purchase-order\\table\\table.html",
+              "RelativeDocumentMoniker": "client\\src\\app\\components\\purchase-order\\table\\table.html",
+              "ToolTip": "D:\\Repos\\anacondaf\\todoapp\\client\\src\\app\\components\\purchase-order\\table\\table.html",
+              "RelativeToolTip": "client\\src\\app\\components\\purchase-order\\table\\table.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-05-06T05:24:59.628Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "table.css",
+              "DocumentMoniker": "D:\\Repos\\anacondaf\\todoapp\\client\\src\\app\\components\\purchase-order\\table\\table.css",
+              "RelativeDocumentMoniker": "client\\src\\app\\components\\purchase-order\\table\\table.css",
+              "ToolTip": "D:\\Repos\\anacondaf\\todoapp\\client\\src\\app\\components\\purchase-order\\table\\table.css",
+              "RelativeToolTip": "client\\src\\app\\components\\purchase-order\\table\\table.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAMAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-05-06T05:24:56.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "purchase-order.component.html",
+              "DocumentMoniker": "D:\\Repos\\anacondaf\\todoapp\\client\\src\\app\\components\\purchase-order\\purchase-order.component.html",
+              "RelativeDocumentMoniker": "client\\src\\app\\components\\purchase-order\\purchase-order.component.html",
+              "ToolTip": "D:\\Repos\\anacondaf\\todoapp\\client\\src\\app\\components\\purchase-order\\purchase-order.component.html",
+              "RelativeToolTip": "client\\src\\app\\components\\purchase-order\\purchase-order.component.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-05-06T05:25:21.703Z",
+              "EditorCaption": ""
             }
           ]
         }
