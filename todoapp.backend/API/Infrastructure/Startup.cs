@@ -1,6 +1,10 @@
 ﻿using Asp.Versioning;
 using Infrastructure.Commons;
 using Infrastructure.Persistences;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Routing;
+using Microsoft.Extensions.Configuration;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Infrastructure;
 
@@ -11,7 +15,8 @@ public static class Startup
         services
             .AddServices()
             .AddPersistence(configuration)
-            .AddApiVersioning();
+            .AddApiVersioning()
+            .AddScoped<ICustomSeedRunner, CustomSeedRunner>();
 
         return services;
     }

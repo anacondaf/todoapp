@@ -1,3 +1,5 @@
+using Microsoft.Extensions.Configuration;
+
 namespace Host.Configurations;
 
 public static class Startup

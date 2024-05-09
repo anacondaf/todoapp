@@ -16,17 +16,12 @@ import { MatMenuModule } from '@angular/material/menu';
   }),
 })
 export class HeaderComponent {
-  @ViewChild('fileInput')
-  set fileInput(val: ElementRef) {
-    if (val) {
-      console.log(val);
-    }
-  }
+  @ViewChild('fileInput') fileInput!: ElementRef;
 
   file: File | null = null;
 
   onChangeFileInput(): void {
     const files: { [key: string]: File } = this.fileInput.nativeElement.files;
-    this.file = files[0];
+    console.log(this.fileInput);
   }
 }

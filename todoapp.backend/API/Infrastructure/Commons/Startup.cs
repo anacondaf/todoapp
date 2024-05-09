@@ -1,10 +1,10 @@
 ﻿using Application.Commons.Interfaces;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Infrastructure.Commons;
 
-internal static class Startup
+public static class Startup
 {
-
     public static IServiceCollection AddServices(this IServiceCollection services) =>
         services
             .AddServices(typeof(ITransientService), ServiceLifetime.Transient)
