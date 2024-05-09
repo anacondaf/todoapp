@@ -1,19 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
 
 namespace Infrastructure.Persistences.Initialization;
 
-public static class PersistenceExtensions
-{
-    public static async Task InitializeDatabasesAsync(this IServiceProvider services, CancellationToken cancellationToken)
-    {
-        using var scope = services.CreateScope();
-
-        await scope.ServiceProvider.GetRequiredService<ApplicationDbInitializer>().InitializeAsync(cancellationToken);
-    }
-}
-
-internal class ApplicationDbInitializer(ApplicationDbContext dbContext)
+internal class ApplicationDbInitializer(ApplicationDbContext dbContext, ApplicationDbSeeder dbSeeder)
 {
     public async Task InitializeAsync(CancellationToken cancellationToken)
     {
@@ -28,7 +17,7 @@ internal class ApplicationDbInitializer(ApplicationDbContext dbContext)
 
         if (await dbContext.Database.CanConnectAsync(cancellationToken))
         {
-
+            await dbSeeder.SeedDatabaseAsync(dbContext, cancellationToken);
         }
     }
 }

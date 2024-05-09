@@ -1,6 +1,7 @@
 ﻿using Asp.Versioning;
 using Infrastructure.Commons;
 using Infrastructure.Persistences;
+using Infrastructure.Persistences.Initialization;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
@@ -16,9 +17,19 @@ public static class Startup
             .AddServices()
             .AddPersistence(configuration)
             .AddApiVersioning()
-            .AddScoped<ICustomSeedRunner, CustomSeedRunner>();
+            .AddScoped<ICustomSeederRunner, CustomSeederRunner>()
+            .AddServices(typeof(ICustomSeeder), ServiceLifetime.Transient)
+            .AddTransient<ApplicationDbSeeder>()
+            .AddTransient<ApplicationDbInitializer>();
 
         return services;
+    }
+
+    public static async Task InitializeDatabasesAsync(this IServiceProvider services, CancellationToken cancellationToken)
+    {
+        using var scope = services.CreateScope();
+
+        await scope.ServiceProvider.GetRequiredService<ApplicationDbInitializer>().InitializeAsync(cancellationToken);
     }
 
     private static IServiceCollection AddApiVersioning(this IServiceCollection services)
