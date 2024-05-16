@@ -75,7 +75,7 @@ public static class Startup {
 
 Answer for: How to implement DbSeeder?
 
-![alt text](../../../assets/dbseeder.png)
+![alt text](../../../../.github/dbseeder.png)
 
 - Then refer to AddInfrastructure to register ApplicationDbSeeder, ICustomSeeder, ICustomSeederRunner:
 
