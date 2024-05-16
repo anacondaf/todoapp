@@ -1,10 +1,6 @@
 using Application;
 using Host.Configurations;
 using Infrastructure;
-using Infrastructure.Persistences.Initialization;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -21,7 +17,7 @@ builder.Services
 
 var app = builder.Build();
 
-await app.Services.InitializeDatabasesAsync();
+await app.Services.InitializeDatabasesAsync(CancellationToken.None);
 
 if (app.Environment.IsDevelopment())
 {
