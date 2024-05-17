@@ -1,7 +1,7 @@
 {
 	"NServiceBusSettings": {
 		"EndpointName": "BusWorker",
-		"TransportConnectionString": "<ASB_URL>",
+		"TransportConnectionString": "<Comes to Azure Key Vaults to get ASB connection string>",
 		"Topic": "todoapp"
 	}
 }
