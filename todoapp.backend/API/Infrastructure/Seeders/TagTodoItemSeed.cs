@@ -1,4 +1,5 @@
 ﻿
+using Domain.Models;
 using Infrastructure.Persistences;
 using Microsoft.Extensions.Logging;
 
@@ -16,15 +17,31 @@ public class TagTodoItemSeed : ICustomSeeder
         _logger = logger;
     }
 
-    public Task InitializeAsync(CancellationToken cancellationToken)
+    public async Task InitializeAsync(CancellationToken cancellationToken)
     {
         // lock (_locker)
         // {
         //     _context.Seed
         // }
 
-        _logger.LogInformation(nameof(TagTodoItemSeed));
+        _logger.LogInformation($"Seeding {nameof(TagTodoItemSeed)}");
 
-        return Task.CompletedTask;
+        var todoItems = new List<TodoItem>() {
+            new() {
+                Title = "Meeting with UK client",
+            },
+            new() {
+                Title = "Daily meeting",
+            }
+        };
+
+        await _context.TodoItems.AddRangeAsync(todoItems);
+
+        _context.__EFSeedHistory.Add(new Domain.__EFSeedHistory()
+        {
+            Name = nameof(TagTodoItemSeed)
+        });
+
+        await _context.SaveChangesAsync(cancellationToken);
     }
 }

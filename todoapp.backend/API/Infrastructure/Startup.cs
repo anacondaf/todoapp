@@ -1,7 +1,9 @@
-﻿using Asp.Versioning;
+﻿using Application;
+using Asp.Versioning;
 using Infrastructure.Commons;
 using Infrastructure.Persistences;
 using Infrastructure.Persistences.Initialization;
+using Infrastructure.ServiceBus;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
@@ -20,7 +22,8 @@ public static class Startup
             .AddScoped<ICustomSeederRunner, CustomSeederRunner>()
             .AddServices(typeof(ICustomSeeder), ServiceLifetime.Transient)
             .AddTransient<ApplicationDbSeeder>()
-            .AddTransient<ApplicationDbInitializer>();
+            .AddTransient<ApplicationDbInitializer>()
+            .AddServiceBus();
 
         return services;
     }
@@ -30,6 +33,12 @@ public static class Startup
         using var scope = services.CreateScope();
 
         await scope.ServiceProvider.GetRequiredService<ApplicationDbInitializer>().InitializeAsync(cancellationToken);
+    }
+
+    public static async Task InitializeServiceBus(this IServiceProvider serviceProvider)
+    {
+        using var scope = serviceProvider.CreateScope();
+        await scope.ServiceProvider.GetRequiredService<IServiceBusClient>().Initialize();
     }
 
     private static IServiceCollection AddApiVersioning(this IServiceCollection services)

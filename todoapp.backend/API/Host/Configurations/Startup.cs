@@ -1,16 +1,20 @@
-using Microsoft.Extensions.Configuration;
-
 namespace Host.Configurations;
 
 public static class Startup
 {
-    public static IConfiguration AddConfigurations(this IConfigurationBuilder configuration)
+    public static WebApplicationBuilder AddConfigurations(this WebApplicationBuilder builder)
     {
         const string ConfigurationDirectory = "Configurations";
 
-        return configuration
+        builder
+            .Configuration
             .AddJsonFile($"{ConfigurationDirectory}/database.json", optional: false, reloadOnChange: true)
+            // .AddJsonFile($"{ConfigurationDirectory}/logging.json", optional: false, reloadOnChange: true)
+            // .AddJsonFile($"appsettings.json", optional: false, reloadOnChange: true)
+            .AddJsonFile($"{ConfigurationDirectory}/nservicebus.json", optional: false, reloadOnChange: true)
             .AddEnvironmentVariables()
             .Build();
+
+        return builder;
     }
 }

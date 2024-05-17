@@ -8,12 +8,12 @@ internal static class Startup
 {
     internal static IServiceCollection AddPersistence(this IServiceCollection services, IConfiguration configuration)
     {
-        var appDbConnectionString = configuration.GetSection(nameof(DbSettings)).Get<DbSettings>() ?? throw new Exception("Parse application database ");
+        var dbSettings = configuration.GetSection(nameof(DbSettings)).Get<DbSettings>() ?? throw new Exception("Parse application database ");
 
         services.AddDbContext<ApplicationDbContext>(
             opts =>
             {
-                opts.UseSqlServer(appDbConnectionString.ConnectionString, x =>
+                opts.UseSqlServer(dbSettings.ConnectionString, x =>
                 {
                     x.MigrationsAssembly("Migrators.MSSQL");
                     x.MigrationsHistoryTable("__EFMigrationsHistory", "dbo");

@@ -1,0 +1,7 @@
+{
+	"NServiceBusSettings": {
+		"EndpointName": "BusWorker",
+		"TransportConnectionString": "<ASB_URL>",
+		"Topic": "todoapp"
+	}
+}

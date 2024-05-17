@@ -1,6 +1,7 @@
 using Application;
 using Host.Configurations;
 using Infrastructure;
+using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,15 +10,20 @@ builder.Services.AddSwaggerGen();
 
 builder.Services.AddControllers();
 
-builder.Configuration.AddConfigurations();
+builder
+    .AddConfigurations()
+    .RegisterSerilog();
 
-builder.Services
+builder
+    .Services
     .AddApplication()
     .AddInfrastructure(builder.Configuration);
 
 var app = builder.Build();
 
 await app.Services.InitializeDatabasesAsync(CancellationToken.None);
+
+await app.Services.InitializeServiceBus();
 
 if (app.Environment.IsDevelopment())
 {
@@ -28,5 +34,7 @@ if (app.Environment.IsDevelopment())
 app.MapEndpoints();
 
 app.UseHttpsRedirection();
+
+app.UseSerilogRequestLogging();
 
 app.Run();

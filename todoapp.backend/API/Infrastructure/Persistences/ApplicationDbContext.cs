@@ -1,5 +1,6 @@
 ﻿namespace Infrastructure.Persistences;
 
+using Domain;
 using Domain.Commons.Contracts;
 using Domain.Models;
 using Microsoft.EntityFrameworkCore;
@@ -13,6 +14,7 @@ public class ApplicationDbContext(DbContextOptions options) : DbContext(options)
     public DbSet<TagTodoItem> TagTypes { get; set; }
     public DbSet<TodoItem> TodoItems { get; set; }
     public DbSet<Workspace> Workspaces { get; set; }
+    public DbSet<__EFSeedHistory> __EFSeedHistory { get; set; }
 
     protected override void OnModelCreating(ModelBuilder modelBuilder)
     {

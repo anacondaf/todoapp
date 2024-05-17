@@ -1,10 +1,12 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Infrastructure.Persistences;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace Infrastructure;
 
 internal interface ICustomSeederRunner
 {
-    Task RunSeedersAsync(CancellationToken cancellationToken);
+    Task RunSeedersAsync(ApplicationDbContext context, CancellationToken cancellationToken);
 }
 
 
@@ -15,7 +17,7 @@ internal class CustomSeederRunner : ICustomSeederRunner
     public CustomSeederRunner(IServiceProvider serviceProvider) =>
         _seeders = serviceProvider.GetServices<ICustomSeeder>().ToArray();
 
-    public async Task RunSeedersAsync(CancellationToken cancellationToken)
+    public async Task RunSeedersAsync(ApplicationDbContext context, CancellationToken cancellationToken)
     {
         foreach (var seeder in _seeders)
         {
