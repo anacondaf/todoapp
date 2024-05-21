@@ -14,13 +14,15 @@ TODOAPP.BACKEND SAMPLE PROJECT
 | ASP.NET Web API   | Asp.Versioning.WebApi.ApiExplorer | 6.0.0+    | net45, net472                     |
 | ASP.NET Web API   | Asp.Versioning.WebApi.OData       | 6.0.0+    | net45, net472                     |
 | ASP.NET Web API   | Asp.Versioning.WebApi.OData.ApiExplorer | 6.0.0+ | net45, net472                     |
-| ASP.NET Core      | Asp.Versioning.Http1               | 6.0.0+    | net6.0+                           |
-| ASP.NET Core      | Asp.Versioning.Mvc2                | 6.0.0+    | net6.0+                           |
-| ASP.NET Core      | Asp.Versioning.Mvc.ApiExplorer3     | 6.0.0+    | net6.0+                           |
+| ASP.NET Core      | Asp.Versioning.Http[1]               | 6.0.0+    | net6.0+                           |
+| ASP.NET Core      | Asp.Versioning.Mvc[2]                | 6.0.0+    | net6.0+                           |
+| ASP.NET Core      | Asp.Versioning.Mvc.ApiExplorer[3]     | 6.0.0+    | net6.0+                           |
 | ASP.NET Core      | Asp.Versioning.OData               | 6.0.0+    | net6.0+                           |
 | ASP.NET Core      | Asp.Versioning.OData.ApiExplorer   | 6.0.0+    | net6.0+                           |
 | All               | Asp.Versioning.Http.Client         | 6.0.0+    | net6.0+, netstandard1.1, netstandard2.0 |
 
 [1] Base library that supports Minimal APIs
+
 [2] MVC Core with controller support
+
 [3] Supports exploration of Minimal APIs and controllers
