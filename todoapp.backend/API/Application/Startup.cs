@@ -9,7 +9,14 @@ public static class Startup
     {
         services
             .AddMediatR(configuration => configuration.RegisterServicesFromAssembly(typeof(Startup).Assembly))
-            .AddScoped(typeof(IPipelineBehavior<,>), typeof(LoggingBehaviour<,>));
+            .AddPipelineBehaviour();
+
+        return services;
+    }
+
+    public static IServiceCollection AddPipelineBehaviour(this IServiceCollection services)
+    {
+        services.AddScoped(typeof(IPipelineBehavior<,>), typeof(LoggingBehaviour<,>));
 
         return services;
     }

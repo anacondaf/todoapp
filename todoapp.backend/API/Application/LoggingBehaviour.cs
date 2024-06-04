@@ -1,8 +1,8 @@
 namespace Application;
 
-using System.Reflection;
 using MediatR;
 using Microsoft.Extensions.Logging;
+using System.Reflection;
 
 public class LoggingBehaviour<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
 {
