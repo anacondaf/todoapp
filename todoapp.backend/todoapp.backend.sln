@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Infrastructure", "API\Infra
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "API\Application\Application.csproj", "{479E77AC-F77E-48EF-8594-B2123ACD3EB4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Migrators.MSSQL", "API\Migrators\Migrators.MSSQL\Migrators.MSSQL.csproj", "{3A5CAA97-8FF3-49D6-BA55-96B097F2FA60}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Migrators.MSSQL", "API\Migrators\Migrators.MSSQL\Migrators.MSSQL.csproj", "{3A5CAA97-8FF3-49D6-BA55-96B097F2FA60}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

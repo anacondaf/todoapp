@@ -12,6 +12,7 @@ public static class Startup
             // .AddJsonFile($"{ConfigurationDirectory}/logging.json", optional: false, reloadOnChange: true)
             // .AddJsonFile($"appsettings.json", optional: false, reloadOnChange: true)
             .AddJsonFile($"{ConfigurationDirectory}/nservicebus.json", optional: false, reloadOnChange: true)
+            .AddJsonFile($"{ConfigurationDirectory}/azurekv.json", optional: false, reloadOnChange: true)
             .AddEnvironmentVariables()
             .Build();
 

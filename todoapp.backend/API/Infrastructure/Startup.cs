@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using Sidecar.KeyVault;
 
 namespace Infrastructure;
 
@@ -23,7 +24,8 @@ public static class Startup
             .AddServices(typeof(ICustomSeeder), ServiceLifetime.Transient)
             .AddTransient<ApplicationDbSeeder>()
             .AddTransient<ApplicationDbInitializer>()
-            .AddServiceBus();
+            .AddServiceBus()
+            .AddSideCarService(configuration);
 
         return services;
     }
@@ -63,5 +65,10 @@ public static class Startup
     {
         builder.MapControllers();
         return builder;
+    }
+
+    public static IServiceCollection AddSideCarService(this IServiceCollection services, IConfiguration configuration)
+    {
+        return services.UseKVConfiguration(configuration);
     }
 }

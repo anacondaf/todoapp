@@ -1,0 +1,9 @@
+﻿{
+  "KeyVaultSettings": {
+    "KeyVaultName": "",
+    "Uri": "",
+    "ClientId": "",
+    "ClientSecret": "",
+    "TenantId": ""
+  }
+}

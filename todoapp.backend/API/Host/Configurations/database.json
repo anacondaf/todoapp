@@ -1,6 +1,6 @@
 {
 	"DbSettings": {
 		"DbProvider": "sqlserver",
-		"ConnectionString": "Server=127.0.0.1,1433;Database=TodoApp;User Id=sa;Password=P@ssword!;TrustServerCertificate=yes;Trusted_Connection=True;Integrated Security=False;"
+		"ConnectionString": "Server=127.0.0.1,1433;Database=TodoApp;User Id=sa;Password=Password@123;TrustServerCertificate=yes;Trusted_Connection=True;Integrated Security=False;"
 	}
 }
