@@ -1,3 +1,5 @@
+using System.Reflection;
+
 namespace Host.Configurations;
 
 public static class Startup
@@ -13,6 +15,7 @@ public static class Startup
             // .AddJsonFile($"appsettings.json", optional: false, reloadOnChange: true)
             .AddJsonFile($"{ConfigurationDirectory}/nservicebus.json", optional: false, reloadOnChange: true)
             .AddJsonFile($"{ConfigurationDirectory}/azurekv.json", optional: false, reloadOnChange: true)
+            .AddUserSecrets(Assembly.GetExecutingAssembly(), true)
             .AddEnvironmentVariables()
             .Build();
 
