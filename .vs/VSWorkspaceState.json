@@ -1,13 +1,7 @@
 {
   "ExpandedNodes": [
-    "",
-    "\\client",
-    "\\client\\src",
-    "\\client\\src\\app",
-    "\\client\\src\\app\\components",
-    "\\client\\src\\app\\components\\purchase-order",
-    "\\client\\src\\app\\components\\purchase-order\\table"
+    ""
   ],
-  "SelectedNode": "\\client\\src\\app\\components\\purchase-order\\purchase-order.component.scss",
+  "SelectedNode": "\\todoapp.backend.sln",
   "PreviewInSolutionExplorer": false
 }
