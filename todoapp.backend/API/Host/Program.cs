@@ -1,6 +1,7 @@
 using Application;
 using Host.Configurations;
 using Infrastructure;
+using Microsoft.AspNetCore.Identity;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -36,5 +37,7 @@ app.MapEndpoints();
 app.UseHttpsRedirection();
 
 app.UseSerilogRequestLogging();
+
+app.MapIdentityApi<IdentityUser>();
 
 app.Run();

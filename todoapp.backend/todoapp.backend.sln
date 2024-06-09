@@ -15,7 +15,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Application", "API\Applicat
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Migrators.MSSQL", "API\Migrators\Migrators.MSSQL\Migrators.MSSQL.csproj", "{3A5CAA97-8FF3-49D6-BA55-96B097F2FA60}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ReverseProxy", "ReverseProxy\ReverseProxy.csproj", "{29300F98-EF98-4E30-B689-5B98E6566CA0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReverseProxy", "ReverseProxy\ReverseProxy.csproj", "{29300F98-EF98-4E30-B689-5B98E6566CA0}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{55549769-BA7D-4D9A-9CC1-9B6FB566E4D4}"
+	ProjectSection(SolutionItems) = preProject
+		..\api.rest-test.http = ..\api.rest-test.http
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -3,10 +3,12 @@
 using Domain;
 using Domain.Commons.Contracts;
 using Domain.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using System.Reflection;
 
-public class ApplicationDbContext(DbContextOptions options) : DbContext(options), IApplicationDbContext
+public class ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : IdentityDbContext<IdentityUser>(options), IApplicationDbContext
 {
     //public delegate ApplicationDbContext TenantFactory(Guid tenantId);
 

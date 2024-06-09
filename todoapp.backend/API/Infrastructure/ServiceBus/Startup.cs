@@ -10,6 +10,7 @@ public static class Startup
 #if NServiceBus
         services.AddSingleton<IServiceBusClient, ParticularServiceBusClient>();
 #endif
+
         return services;
     }
 }

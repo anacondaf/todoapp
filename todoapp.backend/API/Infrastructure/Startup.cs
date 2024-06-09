@@ -5,6 +5,7 @@ using Infrastructure.Persistences;
 using Infrastructure.Persistences.Initialization;
 using Infrastructure.ServiceBus;
 using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Routing;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
@@ -25,7 +26,8 @@ public static class Startup
             .AddTransient<ApplicationDbSeeder>()
             .AddTransient<ApplicationDbInitializer>()
             .AddServiceBus()
-            .AddSideCarService(configuration);
+            .AddSideCarService(configuration)
+            .Authorization();
 
         return services;
     }
@@ -70,5 +72,23 @@ public static class Startup
     public static IServiceCollection AddSideCarService(this IServiceCollection services, IConfiguration configuration)
     {
         return services.UseKVConfiguration(configuration);
+    }
+
+    public static IServiceCollection Authorization(this IServiceCollection services)
+    {
+        Authentication(services);
+
+        return services
+            .AddAuthorization()
+            .AddIdentityApiEndpoints<IdentityUser>()
+            .Services;
+    }
+
+    private static void Authentication(IServiceCollection services)
+    {
+        services
+            .AddIdentityCore<IdentityUser>()
+            .AddRoles<IdentityRole>()
+            .AddEntityFrameworkStores<ApplicationDbContext>();
     }
 }

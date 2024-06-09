@@ -1,7 +1,7 @@
 {
 	"NServiceBusSettings": {
-		"EndpointName": "",
+		"EndpointName": "BusWorker",
 		"TransportConnectionString": "",
-		"Topic": ""
+		"Topic": "todoapp"
 	}
 }

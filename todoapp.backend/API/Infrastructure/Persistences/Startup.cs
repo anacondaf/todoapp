@@ -22,6 +22,16 @@ internal static class Startup
             }
         );
 
+        //services.AddDbContext<IdentityDbContext>(opts =>
+        //{
+        //    opts.UseSqlServer(dbSettings.ConnectionString, x =>
+        //    {
+        //        x.MigrationsAssembly("Migrators.MSSQL");
+        //        x.MigrationsHistoryTable("__EFMigrationsHistory", "dbo");
+        //    });
+        //    opts.UseQueryTrackingBehavior(QueryTrackingBehavior.TrackAll);
+        //});
+
         return services;
     }
 }
