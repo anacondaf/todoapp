@@ -1,6 +1,7 @@
 ﻿using Application;
 using Asp.Versioning;
 using Infrastructure.Commons;
+using Infrastructure.Identity;
 using Infrastructure.Persistences;
 using Infrastructure.Persistences.Initialization;
 using Infrastructure.ServiceBus;
@@ -80,15 +81,16 @@ public static class Startup
 
         return services
             .AddAuthorization()
-            .AddIdentityApiEndpoints<IdentityUser>()
+            .AddIdentityApiEndpoints<ApplicationUser>()
             .Services;
     }
 
     private static void Authentication(IServiceCollection services)
     {
         services
-            .AddIdentityCore<IdentityUser>()
-            .AddRoles<IdentityRole>()
-            .AddEntityFrameworkStores<ApplicationDbContext>();
+            .AddIdentityCore<ApplicationUser>()
+            .AddDefaultUI()
+            .AddEntityFrameworkStores<ApplicationDbContext>()
+            .AddDefaultTokenProviders();
     }
 }
