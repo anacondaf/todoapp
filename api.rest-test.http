@@ -1,6 +1,6 @@
 @BASE_URL = https://localhost:8000
 
-GET {{BASE_URL}}/tags?key=TransportConnectionString
+GET {{BASE_URL}}/tags
 
 ###
 
